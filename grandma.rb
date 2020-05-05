@@ -14,11 +14,16 @@
 def speak_to_grandma(saying)
   love = "I LOVE YOU GRANDMA!"
   if saying == saying.upcase
-    puts "NO, NOT SINCE 1938!"
+    return "NO, NOT SINCE 1938!"
   elsif saying == love
-    puts "I LOVE YOU TOO PUMPKIN!"
+    return "I LOVE YOU TOO PUMPKIN!"
   else
-    puts "HUH?! SPEAK UP, SONNY!"
+    return "HUH?! SPEAK UP, SONNY!"
   end
 end
 
+speak_to_grandma("I LOVE YOU GRANDMA!")
+speak_to_grandma("Hi Nana, how are you?")
+speak_to_grandma("Hi!")
+speak_to_grandma("WHAT DID YOU EAT TODAY?")
+speak_to_grandma("WHAT?")
